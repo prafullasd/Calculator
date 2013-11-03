@@ -14,8 +14,6 @@ $(document).ready( function() {
         var whatsInside=inputBox.val()
         output.text(whatsInside.toUpperCase())
     }) //binding an event to  button
-    $(this).append(inputBox);
-    $(this).append(calcButton);
-    $(this).append(output);
+    $(this).append(inputBox, calcButton, output);
         })
 });
