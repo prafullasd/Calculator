@@ -1,15 +1,19 @@
 <HTML>
     <head>
         <title>
-            Calculators 
+            Calculators
         </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>
             function clickHandler(){
-                console.log("click!");
+                var whatsInside = $("#text").val(); //$ creates a jquery, # is for id , . for a class
+                var whatsInsideUp = whatsInside.toUpperCase() 
+                console.log(whatsInsideUp);
             }
         </script>
     </head>    
     <body>
+        <input type="text" id="text" size="50" maxlength="10">
         <p><button onclick="clickHandler()">Calculate</button></p>
     </body>
 </HTML>
