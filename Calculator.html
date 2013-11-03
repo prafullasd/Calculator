@@ -4,16 +4,16 @@
             Calculators
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>
-            function clickHandler(){
-                var whatsInside = $("#text").val(); //$ creates a jquery, # is for id , . for a class
-                var whatsInsideUp = whatsInside.toUpperCase() 
-                console.log(whatsInsideUp);
-            }
+        <script src="day1.js"></script>
+
         </script>
     </head>    
     <body>
-        <input type="text" id="text" size="50" maxlength="10">
-        <p><button onclick="clickHandler()">Calculate</button></p>
+        <input type="text" id="text1" size="50" maxlength="10">
+        <p><button onclick="clickHandler(1)">Calculate</button></p>
+        <div id="text_out1"></div>
+        <input type="text" id="text2" size="50" maxlength="10">
+        <p><button onclick="clickHandler(2)">Calculate</button></p>
+        <div id="text_out2"></div>
     </body>
 </HTML>
